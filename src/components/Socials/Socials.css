@@ -1,0 +1,9 @@
+.socials-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.socials-layout:hover a > img {
+    opacity: 0.3;
+}

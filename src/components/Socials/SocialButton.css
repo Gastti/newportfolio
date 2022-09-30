@@ -1,0 +1,22 @@
+.socialbutton-layout {
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.socialbutton-layout img {
+    height: 100%;
+    transition: all .3s;
+}
+
+.socialbutton-layout:hover {
+    transform: translateY(-5px);
+}
+
+.socialbutton-layout img:hover {
+    opacity: 1!important;
+}

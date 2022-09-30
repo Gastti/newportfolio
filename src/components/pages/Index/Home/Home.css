@@ -1,0 +1,136 @@
+.home-layout {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.home-container {
+    width: 580px;
+}
+
+.home-container h1 {
+    color: var(--color-font-main);
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Manrope', sans-serif;
+    font-size: 50pt;
+    line-height: 50pt;
+}
+
+.home-container p {
+    font-size: 14pt;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.5);
+    margin-top: 10px;
+}
+
+.home-title-upperline {
+    width: 150px;
+    height: 8px;
+    background-color: var(--color-font-main);
+    margin-bottom: 50px;
+}
+
+.home-container-left {
+    z-index: 1;
+}
+
+.home-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.home-social-links {
+    margin-top: 20px;
+    margin-right: 75px;
+}
+
+.scrollButton {
+    position: absolute;
+    background-color: var(--color-sub);
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    left: calc(50% - 35px);
+    bottom: 50px;
+}
+
+.scrollButton:hover {
+    transform: scale(1.1);
+}
+
+.scrollButton:active {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+.scrollButton svg {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-15px);
+    }
+
+    15% {
+        transform: translateY(-15px);
+    }
+
+    20% {
+        transform: translateY(15px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.home-medrawn {
+    width: 1200px;
+    position: absolute;
+    margin: 0 auto;
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 0;
+
+}
+
+.home-medrawn img {
+    width: 1000px;
+    /* left: -200px; */
+}
+
+.photobg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    bottom: -120px;
+}

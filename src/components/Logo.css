@@ -1,0 +1,26 @@
+.navbar-logo h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.navbar-logo h2::before {
+    content: '{';
+    color: var(--color-sub);
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+.navbar-logo h2::after {
+    content: '}';
+    color: var(--color-sub);
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+.navbar-logo h2:hover {
+    transform: scale(1.1);
+}
