@@ -11,31 +11,28 @@ import Logo from "../../Logo.js";
 export default function Index() {
     return (
         <div className="App">
-            {/* <div style={{
-                width: '100%',
-                height: '90px',
-                backgroundColor: 'var(--color-container-main)',
-                position: 'fixed',
-                zIndex: 10,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
-            }}>
-                <div className="main-navbar">
-                    <Logo />
-                    <Navbar />
-                </div>
-            </div> */}
-            <Container id='home' className='container-main'>
+            <Container
+                style={{ height: '100vh', maxHeight: '1080px' }}
+                id='home' className='container-main'>
                 <Home />
             </Container>
-            <Container id='about' className='container-secondary'>
+            <Container
+                id='about'
+                className='container-secondary'
+                style={{ height: '100vh', maxHeight: '1080px' }}>
                 <About />
             </Container>
-            <Container id='technologies' className='container-main'>
+            <Container
+                id='technologies'
+                className='container-main'
+                style={{ height: '100vh', maxHeight: '1080px' }}>
                 <Skills />
             </Container>
-            <Container id='projects' className='container-secondary'>
+            <Container
+                id='projects'
+                className='container-secondary'
+                style={{ maxHeight: '2000px', padding: '100px 0px' }}
+            >
                 <Portfolio />
             </Container>
             <Container

@@ -1,0 +1,46 @@
+.project-card {
+    width: 575px;
+    background-color: var(--color-skill-card);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-top: 20px;
+    margin: 30px 0px;
+}
+
+.project-card-header {
+    display: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-card-header span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 5px;
+    user-select: none;
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-body span {
+    line-height: 35px;
+}
+
+.project-card-name {
+    font-size: 20pt;
+    font-weight: 500;
+    color: var(--color-sub);
+}
+
+.project-card-title {
+    font-size: 25pt;
+    font-weight: 500;
+}

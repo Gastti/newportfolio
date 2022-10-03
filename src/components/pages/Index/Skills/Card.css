@@ -1,14 +1,15 @@
 .skillcard-layout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     min-width: 430px;
-    height: 500px;
+    height: 400px;
     box-sizing: border-box;
     padding: 50px;
     margin: 0px 20px;
-    background-color: #2d343f;
-    border-radius: 30px;
+    background-color: var(--color-skill-card);
+    border-radius: 0px 50px 0px 50px;
+    border-left: 5px solid var(--color-sub);
     position: relative;
     user-select: none;
 }
@@ -23,12 +24,15 @@
     position: absolute;
     content: '';
     min-width: 430px;
-    height: 500px;
+    height: 400px;
     box-sizing: border-box;
     padding: 50px;
-    background-color: #2d343f;
-    border-radius: 30px;
+    background-color: var(--color-skill-card);
+    border-radius: 0px 50px 0px 50px;
+    border-left: 5px solid #959595;
+    top: 0px;
 }
+
 .skillcard-layout:last-child::after {
     right: -470px;
     opacity: 0.35;
@@ -48,25 +52,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .skillcard-title {
     font-size: 28pt;
     font-weight: 600;
-    margin-bottom: 10px;
+    line-height: 50px;
 }
 
 .skillcard-paragraph {
     font-size: 16pt;
     font-weight: 400;
     color: rgb(255, 255, 255, 0.6);
-    margin-bottom: 10px;
+    margin-top: 0px !important;
+    line-height: 25px;
 }
 
 .skillcard-underline {
     width: 50px;
     height: 4px;
     background-color: #fff;
-    margin: 20px 0px;
 }

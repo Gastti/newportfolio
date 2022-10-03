@@ -1,9 +1,12 @@
 :root {
   --color-font-main: #f0f2f4;
   --color-sub: #075fe5;
-  --color-underline: #5d6c83;
-  --color-container-main: #1b1f24;
-  --color-container-secondary: #22282f;
+  --color-underline: #888888;
+  /* --color-container-main: #1b1f24;
+  --color-container-secondary: #22282f; */
+  --color-container-main: #202020;
+  --color-container-secondary: #252525;
+  --color-skill-card: #2f2f2f;
   --font-cairo: 'Cairo', sans-serif;
   /* --color-sub: #e50707;
   --color-underline: #5d6c83;
@@ -49,5 +52,5 @@ code {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #2673e6;
 }

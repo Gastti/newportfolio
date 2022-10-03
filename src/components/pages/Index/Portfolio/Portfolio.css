@@ -1,0 +1,19 @@
+.portfolio-layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+    width: 575px;
+}
+
+.portfolio-header {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}

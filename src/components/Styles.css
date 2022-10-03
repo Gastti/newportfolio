@@ -1,0 +1,20 @@
+.subtitle {
+    color: var(--color-font-main);
+    font-family: 'Manrope', sans-serif;
+    font-size: 18pt;
+    line-height: 50pt;
+    text-transform: uppercase;
+}
+
+.subtitle::before {
+    content: '/';
+    color: var(--color-sub);
+    margin-right: 5px;
+}
+
+.texthook {
+    font-size: 38pt;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    line-height: 40pt;
+}
