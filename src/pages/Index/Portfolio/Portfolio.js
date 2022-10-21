@@ -1,9 +1,11 @@
-import '../../../Styles.css'
 import './Portfolio.css'
-import SubContainer from '../../../SubContainer';
+import SubContainer from '../../../components/SubContainer/SubContainer';
 import ProjectCard from './ProjectCard';
-import projectimg from '../../../../img/projectplaceholder.png'
-import Url from '../../../Url';
+import projectimg from '../../../assets/images/projectplaceholder.png'
+import Url from '../../../components/Url/Url';
+import TechBox from './TechBox';
+import Subtitle from "../../../components/Subtitle/Subtitle";
+import Title from "../../../components/Title/Title";
 
 export default function Portfolio() {
 
@@ -12,35 +14,35 @@ export default function Portfolio() {
             <div className='portfolio-layout'>
                 <div className='flex-column'>
                     <div className='portfolio-header'>
-                        <h2 className='subtitle'>Portfolio</h2>
-                        <span className='texthook'>These are the projects <br /> I have worked on.</span>
+                        <Subtitle>Portfolio</Subtitle>
+                        <Title>These are the projects <br /> I have worked on.</Title>
                         <Url>Browse Portfolio</Url>
                     </div>
                     <ProjectCard
                         name='Project Name'
-                        title='This is the project title, looks cool.'
+                        title='This is the project description.'
                         img={projectimg}
                     >
-                        <span>React</span>
-                        <span>Node</span>
+                        <TechBox>React</TechBox>
+                        <TechBox>Node</TechBox>
                     </ProjectCard>
                 </div>
                 <div className='flex-column'>
                     <ProjectCard
                         name='Project Name'
-                        title='This is the project title, looks cool.'
+                        title='This is the project description.'
                         img={projectimg}
                     >
-                        <span>React</span>
-                        <span>Node</span>
+                        <TechBox>React</TechBox>
+                        <TechBox>Node</TechBox>
                     </ProjectCard>
                     <ProjectCard
                         name='Project Name'
-                        title='This is the project title, looks cool.'
+                        title='This is the project description.'
                         img={projectimg}
                     >
-                        <span>React</span>
-                        <span>Node</span>
+                        <TechBox>React</TechBox>
+                        <TechBox>Node</TechBox>
                     </ProjectCard>
                 </div>
             </div>

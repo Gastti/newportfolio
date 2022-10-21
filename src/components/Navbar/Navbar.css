@@ -34,3 +34,10 @@
 .navbar-layout ul .navbar-link:hover {
     opacity: 1;
 }
+
+.navbar-link-bg {
+    background: rgb(7,95,229);
+    background: linear-gradient(270deg, rgba(7,95,229,1) 0%, rgba(56,135,255,1) 100%);
+    padding: 0px 15px;
+    border-radius: 20px;
+}

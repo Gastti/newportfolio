@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import './Skills.css'
+import { useState } from 'react';
+import './Skills.css';
 import Card from './Card';
-import HtmlCssIcon from '../../../../img/icons/htmlcss.png';
-import JavascriptIcon from '../../../../img/icons/javascript.png';
-import ReactIcon from '../../../../img/icons/react.png'
-import NodeIcon from '../../../../img/icons/node.png'
-import MySQLIcon from '../../../../img/icons/mysql.png'
-import MongoDBIcon from '../../../../img/icons/mongodb.png'
-import PostgreSQLIcon from '../../../../img/icons/postgresql.png'
-import GitIcon from '../../../../img/icons/git.png'
-import WhatsNextIcon from '../../../../img/icons/whatsnext.png'
+import HtmlCssIcon from '../../../assets/images/icons/htmlcss.png';
+import JavascriptIcon from '../../../assets/images/icons/javascript.png';
+import ReactIcon from '../../../assets/images/icons/react.png';
+import NodeIcon from '../../../assets/images/icons/node.png';
+import MySQLIcon from '../../../assets/images/icons/mysql.png';
+import MongoDBIcon from '../../../assets/images/icons/mongodb.png';
+import PostgreSQLIcon from '../../../assets/images/icons/postgresql.png';
+import GitIcon from '../../../assets/images/icons/git.png';
+import WhatsNextIcon from '../../../assets/images/icons/whatsnext.png';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Subtitle from "../../../components/Subtitle/Subtitle";
+import Title from "../../../components/Title/Title";
 
 const skillsList = [
     {
@@ -20,14 +22,14 @@ const skillsList = [
         icon: JavascriptIcon
     },
     {
-        title: 'React JS',
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        icon: ReactIcon
-    },
-    {
         title: 'Node JS',
         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         icon: NodeIcon
+    },
+    {
+        title: 'React JS',
+        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        icon: ReactIcon
     },
     {
         title: 'HTML & CSS',
@@ -83,16 +85,16 @@ const Skills = () => {
         <div className="skills-layout">
             <div className='skills-header'>
                 <div className='skills-title'>
-                    <h2>Skills & Technologies</h2>
-                    <span className='text-hook'>The technologies I work with</span>
+                    <Subtitle>Skills & Technologies</Subtitle>
+                    <Title>The technologies I work with</Title>
                 </div>
                 <div className='skills-navigation'>
                     <div
                         className='skills-navigation-button back'
                         onClick={() => {
-                            skillListPosition < 0 
-                            ? setSkillListPosition(skillListPosition + 470)
-                            : setSkillListPosition(skillListPosition)
+                            skillListPosition < 0
+                                ? setSkillListPosition(skillListPosition + 470)
+                                : setSkillListPosition(skillListPosition)
                         }}
                     >
                         <ArrowBackIosNewIcon sx={{ fontSize: '25pt' }} />
@@ -101,15 +103,15 @@ const Skills = () => {
                         className='skills-navigation-button'
                         onClick={() => {
                             skillListPosition !== -3760
-                            ? setSkillListPosition(skillListPosition - 470)
-                            : setSkillListPosition(skillListPosition)
+                                ? setSkillListPosition(skillListPosition - 470)
+                                : setSkillListPosition(skillListPosition)
                         }}
                     >
                         <ArrowForwardIosIcon sx={{ fontSize: '25pt' }} />
                     </div>
                 </div>
             </div>
-            <div className='skills-list' style={{transform: 'translate(' + skillListPosition + 'px)'}}>
+            <div className='skills-list' style={{ transform: 'translate(' + skillListPosition + 'px)' }}>
                 {renderSkillsList()}
                 {/* <div className='fillingcard fillingcard-one'></div>
                 <div className='fillingcard fillingcard-two'></div> */}

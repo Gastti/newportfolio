@@ -9,20 +9,6 @@
     transition: all 1s;
 }
 
-.skills-layout h2 {
-    color: var(--color-font-main);
-    font-family: 'Manrope', sans-serif;
-    font-size: 18pt;
-    line-height: 50pt;
-    text-transform: uppercase;
-}
-
-.skills-layout h2::before {
-    content: '/';
-    color: var(--color-sub);
-    margin-right: 5px;
-}
-
 .skills-layout p {
     font-size: 14pt;
     font-weight: 300;

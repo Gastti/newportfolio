@@ -1,0 +1,13 @@
+.com-subtitle {
+    color: var(--color-font-main);
+    font-family: 'Manrope', sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.com-subtitle::before {
+    content: '/';
+    color: var(--color-sub);
+    margin-right: 5px;
+}

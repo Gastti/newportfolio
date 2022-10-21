@@ -1,10 +1,10 @@
 import './Socials.css'
 import SocialButton from './SocialButton';
-import facebook from '../../img/socials/facebook.png';
-import instagram from '../../img/socials/instagram.png';
-import twitter from '../../img/socials/twitter.png';
-import linkedin from '../../img/socials/linkedin.png';
-import github from '../../img/socials/github.png';
+import facebook from '../../assets/images/socials/facebook.png';
+import instagram from '../../assets/images/socials/instagram.png';
+import twitter from '../../assets/images/socials/twitter.png';
+import linkedin from '../../assets/images/socials/linkedin.png';
+import github from '../../assets/images/socials/github.png';
 
 export default function Socials() {
     return (

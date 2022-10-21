@@ -1,5 +1,5 @@
 import './Card.css'
-import Url from '../../../Url'
+import Url from '../../../components/Url/Url'
 
 const Card = ({ title, children, href, urlText }) => {
     return (

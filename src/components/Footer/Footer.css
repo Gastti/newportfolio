@@ -4,29 +4,34 @@
     justify-content: space-between;
     height: 100%;
     box-sizing: border-box;
-    padding-top: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .footer-container {
-    width: 580px;
-}
-
-.footer-container.left {
-    margin-right: 250px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-profile {
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 15px 30px;
+    border-radius: 3px;
+    height: 110px;
 }
 
 .footer-profile .photo {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     margin-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-profile .photo img {
@@ -58,15 +63,31 @@
 .footer-contact {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 15px 15px 0px 15px;
+    border-radius: 3px;
+    height: 110px;
 }
 
-.contact-email p,
-.footer-navbar p {
+.contact-email,
+.contact-linkedin {
+    margin: 0px 10px;
+}
+
+.footer-card {
+    position: relative;
+}
+
+.footer-card p {
     font-size: 13pt;
     font-weight: 500;
     letter-spacing: 1px;
     color: #7f8ea5;
     text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 24px;
 }
 
 .footer-top {
@@ -74,12 +95,13 @@
     justify-content: center;
 }
 
-.footer-navbar {
+.footer-socials {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--color-underline);
-    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 15px 25px 0px 25px;
+    border-radius: 3px;
+    height: 110px;
 }
 
 .footer-navbar>div:first-child {
